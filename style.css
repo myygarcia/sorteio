@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #divLogo {
+    background: #fd7c59;
+    border-radius: 100%;
+}
+
+header .logo {
+    position: relative;
+    max-width: 150px;
+    padding: 20px 15px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+
+header #extensionText {
+    background: #fff;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+header #extensionText:hover {
+    color: #fd7c59;
+    background: #fff;
+}
+
+header .home {
+    cursor: pointer;
+}
+
+header .home:hover {
+    color: #fd7c59;
+}
+
+header .contact {
+    cursor: pointer;
+}
+
+header .contact:hover {
+    color: #fd7c59;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #fd7c59;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #333;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.content .textBox p {
+    color: #333;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 340px;
+}
+body {
+    background-color: #c6d9f0;
+    font-family: Lato, sans-serif;
+    color: #867c7c;
+    overflow-x: hidden;
+}
+
+
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+
+h2 {    
+    line-height: 68px;
+    font-size: 24px;
+    color: #8a8a8a;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+
+p {
+    color: #8a8a8a;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.desktop_navbar {
+    line-height: 80px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+
+
+
+/*.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}*/
+
+
+/*.desktop_navbar nav {
+    color: #fff;
+    font-size: 16px;
+    float: right;
+    right: calc(50%-400px);
+    cursor: pointer;
+}
+
+
+.desktop_navbar nav li {
+    font-weight: 300;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    padding-right: 10px;
+}
+*/
+.mobile-nav {
+    display:none;
+  }
+  
+  #toggle-nav {
+    display:none;
+  }
+
+.box {
+    margin-top: 100px;
+}
+
+.mainBox {
+    margin-top: 10px;
+}
+
+.box, .box-price {
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #b7b7b7;
+    display: block;
+    width: 800px;
+    overflow: auto;
+    float: both;
+    min-height: 350px;
+}
+
+.username-header {
+    background: #f0f0f0;
+    height: 68px;
+    margin: 0;
+    padding: 0;
+    line-height: 68px;
+    font-size: 24px;
+    text-align: left;
+    color: #8a8a8a;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.username-header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 68px;
+    font-size: 24px;
+    text-align: center;
+    color: #8a8a8a;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-red {
+    background: #fd7c59;
+    border: 1px solid #c7583a;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.inputbox {
+    width: 93%;
+}
+
+.inputbox, .inputboxPopup {
+    height: 68px;
+    border: 1px solid #ccc9c9;
+    line-height: 68px;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: .73px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    outline: 0;
+}
+
+.label-sort {
+    color: #8a8a8a;
+}
+
+.input-sort {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgb(10 10 10/10%);
+    font-family: inherit;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem 0;
+    font-family: inherit;
+    padding: .85em 1em;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    font-size: .9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+.limpar {
+    float: right;
+    background: #FFF;
+    border: 1px solid #ccc9c9;
+}
+
+.limpar:hover {
+    background: #ccc9c9
+}
+
+.sorteio:hover{
+    background: #fd7c59;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #232323;
+    padding-top: 20px;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+footer .wrap_ul {
+    width: 700px;
+    overflow: auto;
+}
+
+footer ul {
+    text-align: left;
+}
+
+footer li {
+    list-style: none;
+    padding: 10px;
+}
+
+footer a:link, a:active, a:visited {
+    color: #fff;
+    opacity: .7;
+    text-decoration: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+.ul_left {
+    float: left;
+}
+
+.ul_right {
+    float: right;
+}
+
+@media screen and (max-width:768px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    header #divLogo {
+        padding: 20px 15px;
+    }
+
+    header .logo {
+        padding: 0;
+    }
+    
+    .content {
+        top: 80px;
+        width: 100%;
+        display: block;
+    }
+    .content .textBox h2 {
+        color: #fd7c59;
+        font-size: 3em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    
+    .content .textBox h2 span {
+        color: #333;
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+    
+    .content .imgBox {
+        display: block;
+    }
+
+    .content .imgBox img {
+        justify-content: center;
+    }
+    body {
+        /*width: 802px;*/
+    }
+   
+    
+    .desktop_navbar {
+      display: none;
+    }
+  
+    #toggle-nav {
+      display:block;
+      position:fixed;
+      top:8px;
+      right:30px;
+      font-size:42px;
+      background:#eee;
+      padding: 2px 16px;
+      border-radius:50%;
+      transition: .4s;
+      cursor:pointer;
+    }
+  
+    #toggle-nav.open {
+      transform: rotate(226deg);
+      color:#8f0303;
+    }
+  
+    .mobile-nav {
+      display: block;
+      max-height:0;
+      margin-top: 80px;
+      overflow:hidden;
+      transition: .4s ease-in-out;
+    }
+  
+    .mobile-nav.open {
+      max-height:260px;
+      cursor: pointer;
+    }
+
+    .mobile-nav nav ul li {
+        text-align: center;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .wrap_ul {
+        width: 100%;
+        
+    }
+
+    .ul_left {
+        text-align: center;
+        float: none;
+    }
+    
+    .ul_right {
+        text-align: center;
+        float: none;
+    }
+
+    .box  {
+        width: 100%;
+    }
+  
+
+  }
+
+  @media screen and (max-width:992px) {
+
+
+    .content {
+        top: 80px;
+        width: 100%;
+        display: block;
+    }
+    .content .textBox h2 {
+        color: #fd7c59;
+        font-size: 3em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    
+    .content .textBox h2 span {
+        color: #333;
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+    
+    .content .imgBox {
+        display: block;
+    }
+
+    .content .imgBox img {
+        justify-content: center;
+    }
+
+      .desktop_navbar {
+          width: 100%;
+      }
+
+      .box {
+          width: 100%;
+      }
+  }
+
+  @media screen and (max-width:1376px) {
+    .content {
+        top: 80px;
+        width: 100%;
+        display: block;
+    }
+
+ 
+    .content .textBox h2 {
+        color: #fd7c59;
+        font-size: em;
+        line-height: 1.4em;
+        font-weight: 500;
+    }
+    
+    .content .textBox h2 span {
+        color: #333;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    
+  
+
+    .content .imgBox img {
+        justify-content: center;
+    }
+      
+  }
+

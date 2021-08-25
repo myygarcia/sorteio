@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sorteio no Instagram - Sorteio rápido e fácil em menos de 3 min</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Lato:600,400,300,100">
+    <link rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <meta name="google" content="notranslate">
+    <meta property="og:image" content="https://sorteiogram.com/img/sorteiogram.fb.jpg">
+    <meta name="description" content="Realize sorteios no Instagram de forma fácil, rapida e confiável. Totalmente gratuito.">
+    <meta name="keywords" content="sorteios,sorteio,instagram,realizar,insta">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+    
+    </head>
+  <body>
+    <section>
+        <header>
+            <a id="divLogo" href="https://sorteiogram.com" title="Realize sorteios no instagram">
+            <img src="https://sorteiogram.com/img/sorteiogram.logo.png" 
+                 alt="Sorteio no Instagram - Sorteio rápido, fácil e grátis"  class="logo">
+            </a>
+
+            <!-- nav desktop -->
+            <div class="desktop-nav">
+                <nav>       
+                    <ul>             
+                        <li class="home" alt="Botão para a página de realizar sorteios">
+                            <i  aria-hidden="true"></i> Realizar Sorteio
+                        </li>
+                        <li class="contact">
+                            <i aria-hidden="true"></i> Fale Conosco
+                        </li>
+                        <li class="extension">
+                            <a href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne" id="extensionText" target="_blank">
+                                <i  aria-hidden="true"></i> Instalar extensão
+                            </a>
+                        </li> 
+                    </ul>
+                </nav> 
+            </div>
+            <!-- nav desktop fim -->
+
+            <!-- nav mobile -->
+            <div id="toggle-nav">+</div>
+            <div class="mobile-nav">
+                <nav>
+                    <ul>
+                        <li class="home">
+                            <i aria-hidden="true"></i> Realizar Sorteio
+                        </li>
+                        <li class="contact">
+                            <i aria-hidden="true"></i> Fale Conosco
+                        </li>
+                        <li class="extension">
+                            <a href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne" id="extensionText" target="_blank" >
+                                <i aria-hidden="true"></i> Instalar extensão
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- nav mobile fim -->
+        </header>
+
+        <!-- textos e imagem da home -->
+        <div class="content">
+            <div class="textBox">
+                <h2>Sorteio no Instagram <br> <span>Simples, fácil e confiável</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id velit sit amet diam molestie iaculis sed eu quam. 
+                   Donec imperdiet est a eros pretium bibendum. Curabitur mollis sed neque a molestie. Class aptent taciti sociosqu ad litora 
+                   torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="imgBox">
+                <img src="images\img1.svg" class="img1">
+            </div>
+        </div>
+    </section>
+
+   
+<center>
+    <div id="page-container">
+        <div id="page-wrap">
+
+            <!--sorteio de numeros-->
+            
+            <div class="box mainBox">       
+               
+                <div class="sortear" style="text-align: left; padding: 0px 20px 0px 20px;">
+                    <h2>Sortear números
+                        <a class="material-icons" onclick="ComoSortearNumeros()" style="cursor: pointer; color: #fd7c59;">
+                            help_outline
+                        </a>
+                    </h2>   
+                    <div id="como_sortear_numeros" style="display: none;">
+                        <h2>Como fazer um sorteio de números</h2>
+                           <p style="margin-bottom: 30px;"> 1. Informe quantos números você quer no resultado do sorteio. Exemplo: 3<br>
+                            2. Preencha qual o intervalo deve ser sorteado. Exemplo: entre 1 e 100 <br>
+                            3. Clique em sortear. Pronto!</p>
+                    </div>
+                    <p>Crie o sorteio de números facilmente utilizando essa opção.</p>
+                    
+                    <form class="grid-x" style="margin-top: 20px;">
+                        <div class="cell">
+                            <label class="label-sort">O resultado terá quantos números?</label><br>
+                            <input class="input-sort" type="number" pattern="number" name="qtd_numeros" id="qtd_numeros" autocomplete="off" style="margin-bottom: 15px;"><br>
+                            <label class="label-sort">Entre</label><br>
+                            <input class="input-sort" type="number" pattern="number" name="min" id="min" autocomplete="off" style="margin-bottom: 15px;"><br>
+                            <label class="label-sort">e</label><br>
+                            <input class="input-sort" type="number" pattern="number" name="max" id="max" autocomplete="off"><br>
+                        </div>
+
+                        <div class="cell">
+                            <button type="button" onclick="sorteioNumeros()" class="button sorteio">Sortear</button>
+                            <button type="button" onclick="limparNumero()" id="limparNum" class="button limpar">Limpar</button>
+                        </div>
+                        
+                        <h2 id="resultado_numeros" style="text-align: center; background: bisque; margin-bottom: 20px;"></h2>
+                    </form>
+                    
+                </div>
+
+            </div> 
+            <!-- sorteio numeros fim -->
+
+            <!--sorteio de nomes-->
+
+            <div class="box mainBox">
+                <div class="sortear" style="text-align: left; padding: 0px 20px 0px 20px;">
+                    <h2>Sortear nomes
+                        <a class="material-icons" onclick="ComoSortearNomes()" style="cursor: pointer; color: #fd7c59;">
+                            help_outline
+                        </a>
+                    </h2>
+                    <div id="como_sortear_nomes" style="display: none;">
+                        <h2>Como fazer um sorteio de nomes</h2>
+                           <p style="margin-bottom: 30px;"> 1. Informe quantos nomes você quer no resultado do sorteio. Exemplo: 3 <br>
+                            2. Insira os nomes que você quer sortear, um nome por linha. <br>
+                            3. Clique em sortear. Pronto!</p>
+                    </div>
+                    <p>Crie o sorteio de nomes, insira manualmente os nomes para realizar o sorteio.</p>
+                    
+                    <form class="grid-x" style="margin-top: 20px;">
+                        <div class="cell">
+                            <label class="label-sort">O resultado terá quantos nomes?</label><br>
+                            <input class="input-sort" type="number" pattern="number" name="qtd_nomes" id="qtd_nomes" autocomplete="off" style="margin-bottom: 15px;"><br>
+                            <label class="label-sort">Insira um nome por linha</label><br>
+                            <textarea class="input-sort"name="nomes" id="nomes" rows="5"></textarea><br>
+                            
+                        </div>
+
+                        <div class="cell">
+                            <button type="button" onclick="sorteioNomes()" class="button sorteio">Sortear</button>
+                            <button type="button" onclick="limparNome()" id="limparNomes" class="button limpar">Limpar</button>
+                        </div>
+                        
+                        <h2 id="resultado_nomes" style="text-align: center; background: bisque; margin-bottom: 20px;"></h2>
+                    </form>
+                </div>
+            </div>
+            <!--fim sortear nomes-->
+
+            <!-- sorteio de amigo secreto -->
+
+            <div class="box mainBox">
+                <div class="sortear" style="text-align: left; padding: 0px 20px 0px 20px;">
+                    <h2>Sortear amigo secreto
+                        <a class="material-icons" onclick="ComoSortearAmigoSecreto()" style="cursor: pointer; color: #fd7c59;">
+                            help_outline
+                        </a>
+                    </h2>
+                    <div id="como_sortear_amigo_secreto" style="display: none;">
+                        <h2>Como fazer um sorteio de amigo secreto</h2>
+                           <p style="margin-bottom: 30px;">
+                            1. Insira os nomes que você quer sortear, um nome por linha. <br>
+                            2. Clique em sortear nomes. Pronto!</p>
+                    </div>
+                    <p>Crie o sorteio de amigo secreto simplificado com essa ferramenta que não exige cadastro.</p>
+                    
+                    <form class="grid-x" style="margin-top: 20px;">
+                        <div class="cell">
+                           
+                            <label class="label-sort">Insira um nome por linha</label><br>
+                            <textarea class="input-sort"name="amigos" id="amigos" rows="5"></textarea><br>
+                            
+                        </div>
+
+                        <div class="cell">
+                            <button type="button" onclick="sorteioAmigoSecreto()" class="button sorteio">Sortear</button>
+                            <button type="button" onclick="limparAs()" id="limparAmigo" class="button limpar">Limpar</button>
+                        </div>
+
+                        <h2 id="resultado_amigos" style="text-align: center; background: bisque; margin-bottom: 20px;"></h2>
+                    </form>
+                </div>
+                    
+            </div>
+            <!-- sorteio de amigo secreto fin-->
+            
+        </div>
+        <!-- page wrap fim -->
+
+        <!-- rodape -->
+        <footer>
+            <div class="wrap_ul">
+                <ul class="ul_left">
+                    <li><b>Sites parceiros</b></li>
+                    
+                    <li><a href="https://growsocial.com.br/?ref=link_sorteiogram.com" target="_blank" title="Como ganhar seguidores no Instagram usando o GrowSocial">Ganhe mais seguidores no Instagram</a></li>
+                    <li><a href="https://linkna.bio/?ref=link_sorteiogram.com" target="_blank" title="Crie seu Link Na Bio para o Instagram">Crie seu Link na Bio</a></li>
+                    <li><a href="https://sorteiotok.com/?ref=link_sorteiogram.com" target="_blank" title="Sorteio no Tik Tok">Sorteio no Tiktok</a></li>
+                    
+                    
+                    
+                </ul>
+                    <ul class="ul_right">
+                    <li><b>Mapa do Site</b></li>
+                    <li><a href="https://chrome.google.com/webstore/detail/sorteiogram/gjpkngahkcdfjnelojifgmdjfocdllne" target="_blank">Instalar extensão do Google Chrome</a></li>
+                    <li><a href="/blog" target="_blank">Blog</a></li>
+                    <li><a href="mailto:contato@sorteiogram.com?subject=Contato SorteioGram">Fale conosco</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=yZtFjSrHgVU" target="_blank">Video de Como realizar Sorteios no Instagram</a></li>
+    
+                    
+                </ul>
+            </div>
+            <div class="wrap_footer_rights"><center>Todos os direitos reservados. SorteioGram 2021</center></div>
+            
+        </footer>
+        <!-- rodape fim-->
+
+    </div>
+    <!--page container fim -->
+
+</center>
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
