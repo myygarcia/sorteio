@@ -1,12 +1,7 @@
 # dlweb
 Landing page sorteio
 
-A pasta deste código contém:
 
-1. Arquivo index.html
-2. Arquivo script.js
-3. Arquivo style.css
-4. Pasta images com o arquivo img1.svg
 
 A página conta com as principais funcionalidades: sortear números, sortear nomes e sortear amigo secreto.
 
