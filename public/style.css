@@ -161,34 +161,6 @@ p {
     z-index: 9;
 }
 
-
-
-/*.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-}*/
-
-
-/*.desktop_navbar nav {
-    color: #fff;
-    font-size: 16px;
-    float: right;
-    right: calc(50%-400px);
-    cursor: pointer;
-}
-
-
-.desktop_navbar nav li {
-    font-weight: 300;
-    cursor: pointer;
-    float: left;
-    list-style: none;
-    margin-right: 30px;
-    padding-right: 10px;
-}
-*/
 .mobile-nav {
     display:none;
   }
@@ -408,7 +380,7 @@ b {
         justify-content: center;
     }
     body {
-        /*width: 802px;*/
+        width: 802px;
     }
    
     
